@@ -5,10 +5,48 @@ import Separator from "../utils/Separator";
 import { FaReact, FaNodeJs, FaCss3Alt } from "react-icons/fa";
 
 const Body = () => {
-  const frontendImage = "path/to/frontend-image.png"; // Replace with your image path
-  const backendImage = "path/to/backend-image.png"; // Replace with your image path
-  const designImage = "path/to/design-image.png"; // Replace with your image path
-  const devopsImage = "path/to/devops-image.png"; // Replace with your image path
+  const skills = [
+    {
+      imageUrl: "path/to/frontend-image.png",
+      title: "Frontend Development",
+      skills: ["React", "Vue", "Angular", "HTML", "CSS", "JavaScript"],
+    },
+    {
+      imageUrl: "path/to/frontend-image.png",
+      title: "Backend Development",
+      skills: ["Node.js", "Express", "Django", "Ruby on Rails"],
+    },
+    {
+      imageUrl: "path/to/frontend-image.png",
+      title: "Graphic Design",
+      skills: ["Photoshop", "Illustrator", "Figma", "Sketch"],
+    },
+    {
+      imageUrl: "path/to/frontend-image.png",
+      title: "DevOps",
+      skills: ["Docker", "Kubernetes", "AWS", "Azure"],
+    },
+    {
+      imageUrl: "path/to/frontend-image.png",
+      title: "DevOps",
+      skills: ["Docker", "Kubernetes", "AWS", "Azure"],
+    },
+    {
+      imageUrl: "path/to/frontend-image.png",
+      title: "DevOps",
+      skills: ["Docker", "Kubernetes", "AWS", "Azure"],
+    },
+    {
+      imageUrl: "path/to/frontend-image.png",
+      title: "DevOps",
+      skills: ["Docker", "Kubernetes", "AWS", "Azure"],
+    },
+    {
+      imageUrl: "path/to/frontend-image.png",
+      title: "DevOps",
+      skills: ["Docker", "Kubernetes", "AWS", "Azure"],
+    },
+  ];
 
   const projects = [
     {
@@ -27,6 +65,12 @@ const Body = () => {
     },
     // Add more projects as needed
   ];
+
+  const rowCalculator = Math.ceil(skills.length / 2);
+  const skillCssDesign = `
+      lg:grid lg:grid-flow-col lg:grid-cols-2 lg:grid-rows-${rowCalculator} lg:gap-2 lg:justify-center lg:px-40
+      flex flex-col w-full `;
+  console.log(rowCalculator);
 
   return (
     <main className="flex-grow flex flex-col justify-center items-center p-6 bg-gray-100">
@@ -49,31 +93,15 @@ const Body = () => {
         ))}
       </>
       <Separator />
-      <div
-        className={`
-      lg:grid lg:grid-flow-col lg:grid-cols-2 lg:grid-rows-2 lg:gap-2 lg:justify-center 
-      flex flex-col w-full `}
-      >
-        <Skills
-          imageUrl={frontendImage}
-          title="Frontend Development"
-          skills={["React", "Vue", "Angular", "HTML", "CSS", "JavaScript"]}
-        />
-        <Skills
-          imageUrl={backendImage}
-          title="Backend Development"
-          skills={["Node.js", "Express", "Django", "Ruby on Rails"]}
-        />
-        <Skills
-          imageUrl={designImage}
-          title="Graphic Design"
-          skills={["Photoshop", "Illustrator", "Figma", "Sketch"]}
-        />
-        <Skills
-          imageUrl={devopsImage}
-          title="DevOps"
-          skills={["Docker", "Kubernetes", "AWS", "Azure"]}
-        />
+      <div className={skillCssDesign}>
+        {skills.map((skills, i) => (
+          <Skills
+            key={i}
+            imageUrl={skills.imageUrl}
+            title={skills.title}
+            skills={skills.skills}
+          />
+        ))}
       </div>
     </main>
   );
