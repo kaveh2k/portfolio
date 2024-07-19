@@ -2,9 +2,11 @@ import React from "react";
 
 const Header = () => {
   return (
-    <div>
-      <h1>Header</h1>
-    </div>
+    <>
+      <header className="bg-blue-600 text-white p-4 flex justify-center items-center">
+        <h1 className="text-3xl">My Personal Webpage</h1>
+      </header>
+    </>
   );
 };
 
