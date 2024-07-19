@@ -15,7 +15,16 @@ const Body = () => {
       <Project />
       <Project />
       <Separator />
-      <Skills />
+      <div
+        className="
+      lg:grid lg:grid-flow-col lg:auto-cols-max lg:grid-rows-2 lg:gap-3 lg:justify-center 
+      sm:flex sm:flex-col sm:w-full "
+      >
+        <Skills />
+        <Skills />
+        <Skills />
+        <Skills />
+      </div>
     </main>
   );
 };
