@@ -9,16 +9,30 @@ import {
   SiMui,
   SiReactrouter,
   SiJavascript,
+  SiAxios,
+  SiPostcss,
+  SiExpress,
+  SiApollographql,
+  SiGraphql,
+  SiJsonwebtokens,
+  SiMongoose,
+  SiPassport,
+  SiMongodb,
+  SiGithub,
 } from "react-icons/si";
+
+import { RiNextjsFill, RiNodejsLine } from "react-icons/ri";
+
 import {
   team,
   git,
-  cloud,
   others,
   backend,
   design,
   multistep,
   newsletter,
+  dotaz_front,
+  fuse,
 } from "../../img/img";
 
 const Body = () => {
@@ -103,13 +117,13 @@ const Body = () => {
       description:
         "A beautiful multi-step subscription form that allows user to go back and forth and play with different options and customize the subscription plan.",
       technologies: [
-        FaReact,
-        SiRedux,
-        FaCss3Alt,
-        SiTailwindcss,
-        SiMui,
-        SiReactrouter,
-        SiJavascript,
+        { icon: FaReact, name: "React.js" },
+        { icon: SiRedux, name: "Redux (RTK)" },
+        { icon: FaCss3Alt, name: "CSS" },
+        { icon: SiTailwindcss, name: "TailWind CSS" },
+        { icon: SiMui, name: "Material-UI (MUI)" },
+        { icon: SiReactrouter, name: "React Router" },
+        { icon: SiJavascript, name: "JavaScript" },
       ],
       projectLink: "/multistep",
     },
@@ -117,13 +131,46 @@ const Body = () => {
       imageUrl: newsletter,
       title: "Newsletter",
       description: "A tiny newsletter subscription form.",
-      technologies: [FaReact, FaCss3Alt, SiJavascript, SiTailwindcss],
+      technologies: [
+        { icon: FaReact, name: "React.js" },
+        { icon: FaCss3Alt, name: "CSS" },
+        { icon: SiJavascript, name: "JavaScript" },
+        { icon: SiTailwindcss, name: "TailWind CSS" },
+      ],
       projectLink: "/newsletter",
+    },
+    {
+      imageUrl: dotaz_front,
+      title: "Dotaz",
+      description:
+        "A tiny project for players who play Dota2. You can check any match ID using this web application. More features are planned for the future.",
+      technologies: [
+        { icon: FaReact, name: "React.js" },
+        { icon: RiNextjsFill, name: "Next.js" },
+        { icon: FaCss3Alt, name: "CSS" },
+        { icon: SiJavascript, name: "JavaScript" },
+        { icon: SiTailwindcss, name: "TailwindCSS" },
+        { icon: SiAxios, name: "Axios" },
+        { icon: SiPostcss, name: "PostCSS" },
+        { icon: RiNodejsLine, name: "Node.js" },
+        { icon: SiExpress, name: "Express" },
+        { icon: SiApollographql, name: "Apollo GraphQL" },
+        { icon: SiGraphql, name: "GraphQL" },
+        { icon: SiJsonwebtokens, name: "JSON Web Tokens" },
+        { icon: SiMongoose, name: "Mongoose" },
+        { icon: SiPassport, name: "Passport" },
+        { icon: SiMongodb, name: "MongoDB" },
+        { icon: SiGithub, name: "GitHub" },
+        { icon: fuse, name: "fuse.js" },
+      ],
+      projectLink: "https://dotaz.onrender.com/",
+      githubLink: "https://github.com/kaveh2k/dotaz/",
+      backendLink: "https://github.com/kaveh2k/dotaz-backend",
     },
   ];
 
   return (
-    <main className="flex-grow flex flex-col justify-center items-center p-6 bg-gray-100">
+    <main className="flex-grow flex flex-col justify-center items-center p-6 bg-gray-100 m-0">
       <div className="text-center mb-8">
         <h2 className="text-3xl font-semibold mb-4">
           Welcome to My portfolio Webpage
@@ -139,6 +186,8 @@ const Body = () => {
             description={project.description}
             technologies={project.technologies}
             projectLink={project.projectLink}
+            githubLink={project.githubLink}
+            backendLink={project.backendLink}
           />
         ))}
       </>
