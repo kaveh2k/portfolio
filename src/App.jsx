@@ -8,6 +8,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Public />} />
+          <Route path="*" element={<Public />} />
         </Route>
       </Routes>
     </div>

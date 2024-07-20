@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Project = ({
   imageUrl,
@@ -24,9 +25,13 @@ const Project = ({
               <TechIcon key={index} className="text-blue-500" />
             ))}
           </div>
-          <a href={projectLink} className="text-indigo-500 hover:underline">
+          <Link
+            to={projectLink}
+            className="text-indigo-500 hover:underline"
+            target="_blank"
+          >
             View Project
-          </a>
+          </Link>
         </div>
       </div>
     </section>
