@@ -3,7 +3,16 @@ import Project from "../utils/Project";
 import Skills from "../utils/Skills";
 import Separator from "../utils/Separator";
 import { FaReact, FaNodeJs, FaCss3Alt } from "react-icons/fa";
-import { team, git, cloud, others, backend, design } from "../../img/img";
+import { SiRedux, SiTailwindcss, SiMui, SiReactrouter } from "react-icons/si";
+import {
+  team,
+  git,
+  cloud,
+  others,
+  backend,
+  design,
+  multistep,
+} from "../../img/img";
 
 const Body = () => {
   const skills = [
@@ -82,11 +91,19 @@ const Body = () => {
 
   const projects = [
     {
-      imageUrl: "path/to/project1-image.jpg",
-      title: "Project One",
-      description: "This is a brief description of Project One.",
-      technologies: [FaReact, FaNodeJs, FaCss3Alt],
-      projectLink: "https://project-one-link.com",
+      imageUrl: multistep,
+      title: "Multi Step Subscription",
+      description:
+        "A beautiful multi-step subscription form that allows user to go back and forth and play with different options and customize the subscription plan.",
+      technologies: [
+        FaReact,
+        SiRedux,
+        FaCss3Alt,
+        SiTailwindcss,
+        SiMui,
+        SiReactrouter,
+      ],
+      projectLink: "/multistep",
     },
     {
       imageUrl: "path/to/project2-image.jpg",

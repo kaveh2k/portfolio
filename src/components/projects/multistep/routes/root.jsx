@@ -30,7 +30,7 @@ export default function Root() {
             sx={{
               width: 274,
               height: "100%",
-              backgroundImage: `${svg}`,
+              backgroundImage: `url(${svg})`,
               backgroundRepeat: "no-repeat",
               backgroundSize: "cover",
               borderRadius: 3.5,

@@ -4,5 +4,6 @@ import cloud from "./cloud.png";
 import git from "./gitt.png";
 import others from "./others.png";
 import backend from "./backend.png";
+import multistep from "./multistep.png";
 
-export { team, design, cloud, git, others, backend };
+export { team, design, cloud, git, others, backend, multistep };
