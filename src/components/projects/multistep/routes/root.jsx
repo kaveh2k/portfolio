@@ -11,7 +11,7 @@ export default function Root() {
   const { title, description } = useSelector((store) => store.heading);
   const { isHome } = useSelector((store) => store.footer);
   return (
-    <>
+    <div className="flex flex-col w-screen ">
       <Box
         sx={{
           display: "flex",
@@ -80,12 +80,14 @@ export default function Root() {
             }}
           >
             <Heading title={title} description={description} />
-            <Box sx={{ display: "flex", flex: 1 }}>
-              {isHome ? <UserInfo /> : <Outlet />}
-            </Box>
+            <>
+              <Box sx={{ display: "flex", flex: 1 }}>
+                {isHome ? <UserInfo /> : <Outlet />}
+              </Box>
+            </>
           </Box>
         </Paper>
       </Box>
-    </>
+    </div>
   );
 }

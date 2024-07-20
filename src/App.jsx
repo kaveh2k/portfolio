@@ -5,7 +5,7 @@ import { Multistep, Newsletter } from "./components/projects/";
 
 const App = () => {
   return (
-    <div>
+    <>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Public />} />
@@ -14,7 +14,7 @@ const App = () => {
           <Route path="*" element={<Public />} />
         </Route>
       </Routes>
-    </div>
+    </>
   );
 };
 

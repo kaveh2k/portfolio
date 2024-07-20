@@ -1,6 +1,6 @@
 import "./Newsletter.css";
 import Card from "./components/Card";
-import "./index.css";
+
 const dummyData = [
   {
     id: 0,

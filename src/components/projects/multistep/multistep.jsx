@@ -3,7 +3,7 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import { Plan, Root, AddOns, Done, Summary } from "./routes";
 import { Provider } from "react-redux";
 import { store } from "./store";
-
+import "./multistep.css";
 const Multistep = () => {
   return (
     <Provider store={store}>
