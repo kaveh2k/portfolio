@@ -46,8 +46,8 @@ const Plan = () => {
     );
     dispatch(
       setNav({
-        next: "add-ons",
-        previous: "",
+        next: "multistep/add-ons",
+        previous: "multistep",
       })
     );
   }, []);
@@ -68,7 +68,13 @@ const Plan = () => {
           }}
         >
           <PlanTile
-            icon={<ArcadeIcon sx={{ width: "40px", height: "40px" }} />}
+            icon={
+              <img
+                src={ArcadeIcon}
+                alt="Arcade Icon"
+                sx={{ width: "40px", height: "40px" }}
+              />
+            }
             title={"Arcade"}
             subTitle={
               isYearly ? `$${yearly.arcade}/yr` : `$${monthly.arcade}/mo`
@@ -78,7 +84,13 @@ const Plan = () => {
             selected={selectedPlan === "arcade"}
           />
           <PlanTile
-            icon={<AdvancedIcon sx={{ width: "40px", height: "40px" }} />}
+            icon={
+              <img
+                src={AdvancedIcon}
+                alt="Advanced Icon"
+                sx={{ width: "40px", height: "40px" }}
+              />
+            }
             title={"Advanced"}
             subTitle={
               isYearly ? `$${yearly.advanced}/yr` : `$${monthly.advanced}/mo`
@@ -88,7 +100,13 @@ const Plan = () => {
             selected={selectedPlan === "advanced"}
           />
           <PlanTile
-            icon={<ProIcon sx={{ width: "40px", height: "40px" }} />}
+            icon={
+              <img
+                src={ProIcon}
+                alt="Pro Icon"
+                sx={{ width: "40px", height: "40px" }}
+              />
+            }
             title={"Pro"}
             subTitle={isYearly ? `$${yearly.pro}/yr` : `$${monthly.pro}/mo`}
             description={isYearly ? "" : "2 months free"}

@@ -4,6 +4,7 @@ import { Box, Paper } from "@mui/material";
 import Step from "../components/Step";
 import Heading from "../components/Heading";
 import UserInfo from "./user-info";
+import svg from "../assets/images/bg-sidebar-desktop.svg";
 
 export default function Root() {
   const { step } = useSelector((store) => store.step);
@@ -29,7 +30,7 @@ export default function Root() {
             sx={{
               width: 274,
               height: "100%",
-              backgroundImage: `url(/bg-sidebar-desktop.svg)`,
+              backgroundImage: `${svg}`,
               backgroundRepeat: "no-repeat",
               backgroundSize: "cover",
               borderRadius: 3.5,

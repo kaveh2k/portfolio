@@ -4,7 +4,10 @@
   "private": true,
   "dependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@emotion/react": "^11.12.0",
+    "@emotion/styled": "^11.12.0",
     "@fontsource/ubuntu": "^5.0.13",
+    "@mui/icons-material": "^5.16.4",
     "@mui/material": "^5.16.4",
     "@reduxjs/toolkit": "^2.2.6",
     "@testing-library/jest-dom": "^5.17.0",

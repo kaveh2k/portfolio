@@ -33,8 +33,8 @@ const Summary = () => {
     );
     dispatch(
       setNav({
-        next: "done",
-        previous: "add-ons",
+        next: "multistep/done",
+        previous: "multistep/add-ons",
       })
     );
     calcTotalPrice();

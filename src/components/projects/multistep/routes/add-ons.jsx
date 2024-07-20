@@ -29,8 +29,8 @@ const AddOns = () => {
     );
     dispatch(
       setNav({
-        next: "summary",
-        previous: "plan",
+        next: "multistep/summary",
+        previous: "multistep/plan",
       })
     );
   }, []);

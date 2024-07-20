@@ -36,7 +36,12 @@ const Done = () => {
         height: "100%",
       }}
     >
-      <ThankYouIcon />
+      <img
+        src={ThankYouIcon}
+        alt="thank you icon"
+        style={{ width: "100%", maxWidth: "100px" }}
+      />
+
       <Typography
         variant="h1"
         sx={{

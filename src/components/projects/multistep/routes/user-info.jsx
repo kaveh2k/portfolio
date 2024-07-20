@@ -39,8 +39,8 @@ const UserInfo = () => {
     );
     dispatch(
       setNav({
-        next: "plan",
-        previous: "",
+        next: "multistep/plan",
+        previous: "multistep",
       })
     );
   }, []);
