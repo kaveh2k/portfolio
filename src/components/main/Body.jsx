@@ -3,7 +3,13 @@ import Project from "../utils/Project";
 import Skills from "../utils/Skills";
 import Separator from "../utils/Separator";
 import { FaReact, FaNodeJs, FaCss3Alt } from "react-icons/fa";
-import { SiRedux, SiTailwindcss, SiMui, SiReactrouter } from "react-icons/si";
+import {
+  SiRedux,
+  SiTailwindcss,
+  SiMui,
+  SiReactrouter,
+  SiJavascript,
+} from "react-icons/si";
 import {
   team,
   git,
@@ -12,6 +18,7 @@ import {
   backend,
   design,
   multistep,
+  newsletter,
 } from "../../img/img";
 
 const Body = () => {
@@ -102,15 +109,16 @@ const Body = () => {
         SiTailwindcss,
         SiMui,
         SiReactrouter,
+        SiJavascript,
       ],
       projectLink: "/multistep",
     },
     {
-      imageUrl: "path/to/project2-image.jpg",
-      title: "Project Two",
-      description: "This is a brief description of Project Two.",
-      technologies: [FaReact, FaNodeJs],
-      projectLink: "https://project-two-link.com",
+      imageUrl: newsletter,
+      title: "Newsletter",
+      description: "A tiny newsletter subscription form.",
+      technologies: [FaReact, FaCss3Alt, SiJavascript, SiTailwindcss],
+      projectLink: "/newsletter",
     },
   ];
 

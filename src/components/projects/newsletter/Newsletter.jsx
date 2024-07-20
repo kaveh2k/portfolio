@@ -30,7 +30,7 @@ const dummyData = [
 ];
 const Newsletter = () => {
   return (
-    <>
+    <div className=" flex flex-col justify-center items-center h-screen w-screen">
       <Card
         title={"Stay Updated!"}
         description={
@@ -38,7 +38,7 @@ const Newsletter = () => {
         }
         itemList={dummyData}
       />
-    </>
+    </div>
   );
 };
 

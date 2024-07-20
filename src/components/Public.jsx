@@ -5,7 +5,7 @@ import Body from "./main/Body";
 
 const Public = () => {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col m-h-full">
       <Header />
       <Body />
       <Footer />
