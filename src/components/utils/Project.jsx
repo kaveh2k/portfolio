@@ -37,23 +37,28 @@ const Project = ({
               </Tooltip>
             ))}
           </div>
-          <Link
-            to={projectLink}
-            className="text-indigo-500 hover:underline"
-            target="_blank"
-          >
-            View Project
-          </Link>
+          {projectLink ? (
+            <Link
+              to={projectLink}
+              className="text-indigo-500 hover:underline"
+              target="_blank"
+            >
+              View Project
+            </Link>
+          ) : (
+            <></>
+          )}
+
           {githubLink ? (
             <Link
               to={githubLink}
               className="text-indigo-500 hover:underline ml-4"
               target="_blank"
             >
-              View Frontend Github
+              View Github
             </Link>
           ) : (
-            ""
+            <></>
           )}
           {backendLink ? (
             <Link
@@ -64,7 +69,7 @@ const Project = ({
               View Backend Github
             </Link>
           ) : (
-            ""
+            <></>
           )}
         </div>
       </div>

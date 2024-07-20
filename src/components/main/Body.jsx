@@ -19,6 +19,7 @@ import {
   SiPassport,
   SiMongodb,
   SiGithub,
+  SiElectron,
 } from "react-icons/si";
 
 import { RiNextjsFill, RiNodejsLine } from "react-icons/ri";
@@ -33,6 +34,7 @@ import {
   newsletter,
   dotaz_front,
   fuse,
+  sample,
 } from "../../img/img";
 
 const Body = () => {
@@ -166,6 +168,21 @@ const Body = () => {
       projectLink: "https://dotaz.onrender.com/",
       githubLink: "https://github.com/kaveh2k/dotaz/",
       backendLink: "https://github.com/kaveh2k/dotaz-backend",
+    },
+    {
+      imageUrl: sample,
+      title: "Store Management Software",
+      description:
+        "NextLevelManager is an offline application built with Next.js, Electron.js and Zustand.js to manage your shop and inventory. The application allows you to add or delete items from your inventory and automatically creates invoices for your in-store or online customers.(Development stage)",
+      technologies: [
+        { icon: FaReact, name: "React.js" },
+        { icon: FaCss3Alt, name: "CSS" },
+        { icon: SiJavascript, name: "JavaScript" },
+        { icon: SiTailwindcss, name: "TailWind CSS" },
+        { icon: RiNextjsFill, name: " Next.js" },
+        { icon: SiElectron, name: " Electron.js " },
+      ],
+      githubLink: "https://github.com/kaveh2k/nextlevelmanager",
     },
   ];
 

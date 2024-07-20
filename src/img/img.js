@@ -8,6 +8,7 @@ import fuse from "./fuse.svg";
 import multistep from "./multistep.png";
 import newsletter from "./newsletter.png";
 import dotaz_front from "./dotaz_front.png";
+import sample from "./sample.png";
 
 export {
   team,
@@ -20,4 +21,5 @@ export {
   newsletter,
   dotaz_front,
   fuse,
+  sample,
 };
