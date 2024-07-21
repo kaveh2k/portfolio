@@ -10,10 +10,10 @@ const Body = () => {
   return (
     <main className="flex-grow flex flex-col justify-center items-center p-6 bg-gray-100">
       <Intro />
-      <Separator />
+      <Separator text={"Projects"} />
       {/** Projects */}
       <RenderProjects />
-      <Separator />
+      <Separator text={"Skills"} />
       {/** Skills */}
       <RenderSkills />
     </main>
