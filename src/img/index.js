@@ -5,6 +5,10 @@ import git from "./gitt.svg";
 import others from "./others.svg";
 import backend from "./backend.svg";
 
+import github from "./github.svg";
+import linkedin from "./linkedin.svg";
+import seek from "./seek.svg";
+
 import fuse from "./fuse.svg";
 import fus2 from "./fuse.png";
 
@@ -26,6 +30,9 @@ import dotaz_front from "./dotaz_front.png";
 import sample from "./sample.png";
 
 export {
+  seek,
+  linkedin,
+  github,
   fus2,
   tailwind,
   apollo,
