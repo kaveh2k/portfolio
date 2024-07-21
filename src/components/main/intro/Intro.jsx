@@ -15,7 +15,7 @@ import IntroIcon from "./introImg";
 const Intro = () => {
   return (
     <>
-      <div className="text-left mb-8 border-2 w-7/12 bg-white p-6 flex flex-col md:flex-row">
+      <div className="text-left mb-8 border-2 md:w-7/12 bg-white p-6 flex flex-col md:flex-row">
         <div className="grid grid-cols-1 md:grid-rows-2 ">
           <div className="">
             <h2 className="text-3xl  font-semibold mb-4">
