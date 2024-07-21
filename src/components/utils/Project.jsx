@@ -28,7 +28,7 @@ const Project = ({
             {technologies.map((TechIcon, index) => (
               <Tooltip key={index} arrow title={TechIcon.name}>
                 <div className="mx-1" key={index}>
-                  <TechIcon.icon className="text-blue-500" />
+                  <TechIcon.Icon className="text-blue-500" />
                 </div>
               </Tooltip>
             ))}
