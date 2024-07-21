@@ -4,7 +4,10 @@ import cloud from "./cloud.svg";
 import git from "./gitt.svg";
 import others from "./others.svg";
 import backend from "./backend.svg";
+
 import fuse from "./fuse.svg";
+import fus2 from "./fuse.png";
+
 import reactjs from "./react.js.svg";
 import web_developer from "./web_developer.svg";
 
@@ -23,6 +26,7 @@ import dotaz_front from "./dotaz_front.png";
 import sample from "./sample.png";
 
 export {
+  fus2,
   tailwind,
   apollo,
   redux,
