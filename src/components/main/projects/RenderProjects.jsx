@@ -6,6 +6,8 @@ import {
   FaJava,
   FaWordpress,
   FaRocket,
+  FaWpforms,
+  FaShieldAlt,
 } from "react-icons/fa";
 import {
   SiRedux,
@@ -103,6 +105,8 @@ const RenderProjects = () => {
         { Icon: FaWordpress, name: "Wordpress" },
         { Icon: SiElementor, name: "Elementor" },
         { Icon: FaRocket, name: "Rocket" },
+        { Icon: FaWpforms, name: "Wpforms" },
+        { Icon: FaShieldAlt, name: "WpDefence" },
       ],
       githubLink: "https://github.com/kaveh2k/teleportgate",
     },
