@@ -35,16 +35,8 @@ import {
   dotaz_front,
   fuse,
   sample,
-  web_developer,
-  reactjs,
-  js,
-  mongodb,
-  expressjs,
-  nodejs,
-  nextjs,
-  apollo,
-  redux,
-} from "../../img/img";
+} from "../../img";
+import Intro from "./intro/Intro";
 
 const Body = () => {
   const skills = [
@@ -197,50 +189,7 @@ const Body = () => {
 
   return (
     <main className="flex-grow flex flex-col justify-center items-center p-6 bg-gray-100 m-0">
-      <>
-        <div className="text-left mb-8 border-2 w-7/12 bg-white p-6 flex flex-col md:flex-row">
-          <div className="grid grid-cols-1 md:grid-rows-2 ">
-            <div className="">
-              <h2 className="text-3xl  font-semibold mb-4">
-                Welcome to My portfolio Webpage
-              </h2>
-              <p className="text-lg">
-                turn ideas into pixels and data into experiences. I'm a
-                full-stack developer passionate about crafting beautiful and
-                functional web applications. Dive into my portfolio to see how I
-                bring concepts to life!
-              </p>
-            </div>
-            <div className="flex flex-row items-center h-fit">
-              <img
-                src={reactjs}
-                alt="react.js"
-                className="w-1/12 mr-3 md:w-12 "
-              />
-              <img src={js} alt="js" className="w-1/12 mr-3 md:w-12 " />
-              <img
-                src={mongodb}
-                alt="mongodb"
-                className="w-1/12 mr-3 md:w-12 "
-              />
-              <img
-                src={expressjs}
-                alt="expressjs"
-                className="w-1/12 mr-3 md:w-12 "
-              />
-              <img src={nextjs} alt="nextjs" className="w-1/12 mr-3 md:w-12 " />
-              <img src={nodejs} alt="nodejs" className="w-1/12 mr-3 md:w-12 " />
-              <img src={apollo} alt="nodejs" className="w-1/12 mr-3 md:w-12 " />
-              <img src={redux} alt="nodejs" className="w-1/12 mr-3 md:w-12 " />
-            </div>
-          </div>
-          <div className=" hidden md:block md:h-3/4 md:w-3/4 lg:h-1/4 lg:w-7/12 ">
-            <div className=" transform transition-transform duration-300 hover:scale-105">
-              <img src={web_developer} alt="Web Developer" />
-            </div>
-          </div>
-        </div>
-      </>
+      <Intro />
       <Separator />
       {/** Projects */}
       <>
