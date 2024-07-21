@@ -95,6 +95,8 @@ const RenderProjects = () => {
         { Icon: SiJavascript, name: "JavaScript" },
       ],
       projectLink: "/multistep",
+      githubLink:
+        "https://github.com/kaveh2k/portfolio/tree/master/src/components/projects/multistep",
     },
     {
       imageUrl: newsletter,
@@ -107,6 +109,8 @@ const RenderProjects = () => {
         { Icon: SiTailwindcss, name: "TailWind CSS" },
       ],
       projectLink: "/newsletter",
+      githubLink:
+        "https://github.com/kaveh2k/portfolio/tree/master/src/components/projects/newsletter",
     },
   ];
 
