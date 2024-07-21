@@ -9,6 +9,7 @@ import {
   nextjs,
   apollo,
   redux,
+  tailwind,
 } from "../../../img";
 import IntroIcon from "./introImg";
 
@@ -37,6 +38,7 @@ const Intro = () => {
             <IntroIcon icon={nodejs} alt="nodejs" />
             <IntroIcon icon={apollo} alt="apollo" />
             <IntroIcon icon={redux} alt="redux" />
+            <IntroIcon icon={tailwind} alt="tailwind" />
           </div>
         </div>
         <div className=" hidden md:block md:h-3/4 md:w-3/4 lg:h-1/4 lg:w-7/12 ">

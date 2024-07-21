@@ -15,6 +15,7 @@ import expressjs from "./express-js.png";
 import nodejs from "./nodejs.svg";
 import apollo from "./apollo.svg";
 import redux from "./redux.svg";
+import tailwind from "./tailwind.svg";
 
 import multistep from "./multistep.png";
 import newsletter from "./newsletter.png";
@@ -22,6 +23,7 @@ import dotaz_front from "./dotaz_front.png";
 import sample from "./sample.png";
 
 export {
+  tailwind,
   apollo,
   redux,
   nextjs,
