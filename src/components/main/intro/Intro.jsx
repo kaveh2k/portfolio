@@ -17,9 +17,9 @@ import IntroIcon from "./introImg";
 const Intro = () => {
   return (
     <>
-      <div className="text-left mb-8 border-2 md:w-7/12 bg-white p-6 flex flex-col md:flex-row">
-        <div className="grid grid-cols-1 md:grid-rows-2 ">
-          <div className="">
+      <div className="mb-8 border-2 md:w-full md:max-w-5xl text-justify bg-white p-6 flex flex-col md:flex-row">
+        <div className="">
+          <div className="mb-3">
             <h2 className="text-3xl  font-semibold mb-4">
               Welcome to My portfolio Webpage
             </h2>
@@ -30,7 +30,7 @@ const Intro = () => {
               to life!
             </p>
           </div>
-          <div className="flex flex-row items-center h-fit">
+          <div className="flex flex-row items-center h-fit ">
             <IntroIcon icon={reactjs} alt="react.js" />
             <IntroIcon icon={js} alt="java script" />
             <IntroIcon icon={mongodb} alt="mongodb" />
@@ -43,7 +43,7 @@ const Intro = () => {
             <IntroIcon icon={fus2} alt="fuse.js" />
           </div>
         </div>
-        <div className=" hidden md:block md:h-3/4 md:w-3/4 lg:h-1/4 lg:w-7/12 ">
+        <div className=" hidden mid-screen:block mid-screen:h-3/4 md:w-3/4 ">
           <div className=" transform transition-transform duration-300 hover:scale-105">
             <img src={web_developer} alt="Web Developer" />
           </div>

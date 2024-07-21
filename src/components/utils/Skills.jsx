@@ -1,19 +1,26 @@
 const Skills = ({ imageUrl, title, skills }) => {
   return (
-    <section className="relative bg-gradient-to-r from-teal-400 to-cyan-500 m-2 p-6 text-white rounded-lg shadow-md flex flex-row lg:m-0">
-      <div className="flex-grow flex flex-col items-start">
-        <h3 className="text-3xl font-bold font-sans mb-4">{title}</h3>
-        <div className="flex-grow">
-          {skills.map((text) => (
-            <p className="text-lg mb-2">- {text}</p>
-          ))}
+    <section className=" bg-gradient-to-r from-teal-400 to-cyan-500 m-2 p-6 text-white rounded-lg shadow-md flex flex-row lg:m-0 font-mono  ">
+      <div className="flex-grow flex flex-row above-mid-screen:flex-col above-mid-screen:justify-start lg-mid-screen:flex-row lg-mid-screen:justify-between justify-between">
+        <img
+          src={imageUrl}
+          alt="Skill related"
+          className="hidden above-mid-screen:flex lg-mid-screen:hidden w-[200px] h-[160px] mx-auto object-contain"
+        />
+        <div>
+          <h4 className="text-3xl font-bold font-sans mb-4">{title}</h4>
+          <div className="flex-grow">
+            {skills.map((text) => (
+              <p className="text-lg mb-2">- {text}</p>
+            ))}
+          </div>
         </div>
+        <img
+          src={imageUrl}
+          alt="Skill related"
+          className="w-full max-w-[150px] h-fit above-mid-screen:hidden lg-mid-screen:flex  mid-screen:w-[200px] mid-screen:object-scale-down mid-screen:h-[180px] object-cover block rounded-lg"
+        />
       </div>
-      <img
-        src={imageUrl}
-        alt="Skill related"
-        className="w-36 h-28 object-cover block rounded-lg"
-      />
     </section>
   );
 };

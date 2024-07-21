@@ -22,10 +22,52 @@ import {
 
 import { RiNextjsFill, RiNodejsLine } from "react-icons/ri";
 
-import { multistep, newsletter, dotaz_front, fuse, sample } from "../../../img";
+import { multistep, newsletter, dotaz_front, sample } from "../../../img";
 
 const RenderProjects = () => {
   const projects = [
+    {
+      imageUrl: dotaz_front,
+      title: "Dotaz",
+      description:
+        "A tiny project for players who play Dota2. You can check any match ID using this web application. More features are planned for the future.",
+      technologies: [
+        { icon: FaReact, name: "React.js" },
+        { icon: RiNextjsFill, name: "Next.js" },
+        { icon: FaCss3Alt, name: "CSS" },
+        { icon: SiJavascript, name: "JavaScript" },
+        { icon: SiTailwindcss, name: "TailwindCSS" },
+        { icon: SiAxios, name: "Axios" },
+        { icon: SiPostcss, name: "PostCSS" },
+        { icon: RiNodejsLine, name: "Node.js" },
+        { icon: SiExpress, name: "Express" },
+        { icon: SiApollographql, name: "Apollo GraphQL" },
+        { icon: SiGraphql, name: "GraphQL" },
+        { icon: SiJsonwebtokens, name: "JSON Web Tokens" },
+        { icon: SiMongoose, name: "Mongoose" },
+        { icon: SiPassport, name: "Passport" },
+        { icon: SiMongodb, name: "MongoDB" },
+        { icon: SiGithub, name: "GitHub" },
+      ],
+      projectLink: "https://dotaz.onrender.com/",
+      githubLink: "https://github.com/kaveh2k/dotaz/",
+      backendLink: "https://github.com/kaveh2k/dotaz-backend",
+    },
+    {
+      imageUrl: sample,
+      title: "Store Management Software",
+      description:
+        "NextLevelManager is an offline application built with Next.js, Electron.js and Zustand.js to manage your shop and inventory. The application allows you to add or delete items from your inventory and automatically creates invoices for your in-store or online customers.(Development stage)",
+      technologies: [
+        { icon: FaReact, name: "React.js" },
+        { icon: FaCss3Alt, name: "CSS" },
+        { icon: SiJavascript, name: "JavaScript" },
+        { icon: SiTailwindcss, name: "TailWind CSS" },
+        { icon: RiNextjsFill, name: " Next.js" },
+        { icon: SiElectron, name: " Electron.js " },
+      ],
+      githubLink: "https://github.com/kaveh2k/nextlevelmanager",
+    },
     {
       imageUrl: multistep,
       title: "Multi Step Subscription",
@@ -53,49 +95,6 @@ const RenderProjects = () => {
         { icon: SiTailwindcss, name: "TailWind CSS" },
       ],
       projectLink: "/newsletter",
-    },
-    {
-      imageUrl: dotaz_front,
-      title: "Dotaz",
-      description:
-        "A tiny project for players who play Dota2. You can check any match ID using this web application. More features are planned for the future.",
-      technologies: [
-        { icon: FaReact, name: "React.js" },
-        { icon: RiNextjsFill, name: "Next.js" },
-        { icon: FaCss3Alt, name: "CSS" },
-        { icon: SiJavascript, name: "JavaScript" },
-        { icon: SiTailwindcss, name: "TailwindCSS" },
-        { icon: SiAxios, name: "Axios" },
-        { icon: SiPostcss, name: "PostCSS" },
-        { icon: RiNodejsLine, name: "Node.js" },
-        { icon: SiExpress, name: "Express" },
-        { icon: SiApollographql, name: "Apollo GraphQL" },
-        { icon: SiGraphql, name: "GraphQL" },
-        { icon: SiJsonwebtokens, name: "JSON Web Tokens" },
-        { icon: SiMongoose, name: "Mongoose" },
-        { icon: SiPassport, name: "Passport" },
-        { icon: SiMongodb, name: "MongoDB" },
-        { icon: SiGithub, name: "GitHub" },
-        { icon: fuse, name: "fuse.js" },
-      ],
-      projectLink: "https://dotaz.onrender.com/",
-      githubLink: "https://github.com/kaveh2k/dotaz/",
-      backendLink: "https://github.com/kaveh2k/dotaz-backend",
-    },
-    {
-      imageUrl: sample,
-      title: "Store Management Software",
-      description:
-        "NextLevelManager is an offline application built with Next.js, Electron.js and Zustand.js to manage your shop and inventory. The application allows you to add or delete items from your inventory and automatically creates invoices for your in-store or online customers.(Development stage)",
-      technologies: [
-        { icon: FaReact, name: "React.js" },
-        { icon: FaCss3Alt, name: "CSS" },
-        { icon: SiJavascript, name: "JavaScript" },
-        { icon: SiTailwindcss, name: "TailWind CSS" },
-        { icon: RiNextjsFill, name: " Next.js" },
-        { icon: SiElectron, name: " Electron.js " },
-      ],
-      githubLink: "https://github.com/kaveh2k/nextlevelmanager",
     },
   ];
 
