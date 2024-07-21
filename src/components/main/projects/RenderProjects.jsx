@@ -66,7 +66,7 @@ const RenderProjects = () => {
         { Icon: SiMongodb, name: "MongoDB" },
         { Icon: SiGithub, name: "GitHub" },
       ],
-      projectLink: "https://dotaz.onrender.com/",
+      projectLink: "https://dotaz.netlify.app/",
       githubLink: "https://github.com/kaveh2k/dotaz/",
       backendLink: "https://github.com/kaveh2k/dotaz-backend",
     },
