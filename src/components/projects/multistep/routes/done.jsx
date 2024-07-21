@@ -25,7 +25,7 @@ const Done = () => {
         previous: "",
       })
     );
-  }, []);
+  }, [dispatch]);
   return (
     <Box
       sx={{

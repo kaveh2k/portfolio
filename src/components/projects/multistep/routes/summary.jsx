@@ -18,6 +18,22 @@ const Summary = () => {
   );
   const dispatch = useDispatch();
   const navigate = useNavigate();
+
+  const calcTotalPrice = () => {
+    let updatePrice = 0;
+    const planPriceObj = isYearly ? price.yearly : price.monthly;
+    const planPrice = planPriceObj[selectedPlan];
+    updatePrice = planPrice;
+    const addOnsPrice = addOns
+      .filter((addOn) => addOn.isChecked)
+      .reduce((acc, cur) => {
+        const value = isYearly ? cur.price.yearly : cur.price.monthly;
+        return acc + value;
+      }, 0);
+    updatePrice += addOnsPrice;
+    dispatch(setTotalPrice(updatePrice));
+  };
+
   useEffect(() => {
     dispatch(setTitle("Finishing up"));
     dispatch(
@@ -38,22 +54,7 @@ const Summary = () => {
       })
     );
     calcTotalPrice();
-  }, []);
-
-  const calcTotalPrice = () => {
-    let updatePrice = 0;
-    const planPriceObj = isYearly ? price.yearly : price.monthly;
-    const planPrice = planPriceObj[selectedPlan];
-    updatePrice = planPrice;
-    const addOnsPrice = addOns
-      .filter((addOn) => addOn.isChecked)
-      .reduce((acc, cur) => {
-        const value = isYearly ? cur.price.yearly : cur.price.monthly;
-        return acc + value;
-      }, 0);
-    updatePrice += addOnsPrice;
-    dispatch(setTotalPrice(updatePrice));
-  };
+  }, [dispatch, calcTotalPrice]);
 
   return (
     <Box

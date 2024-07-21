@@ -50,7 +50,7 @@ const Plan = () => {
         previous: "multistep",
       })
     );
-  }, []);
+  }, [dispatch]);
   return (
     <Box
       sx={{

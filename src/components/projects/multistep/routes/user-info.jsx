@@ -43,7 +43,7 @@ const UserInfo = () => {
         previous: "multistep",
       })
     );
-  }, []);
+  }, [dispatch]);
 
   const registerForm = (e) => {
     e.preventDefault();
