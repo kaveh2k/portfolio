@@ -1,9 +1,12 @@
+import { Tooltip } from "@mui/material";
 import React from "react";
 
 const IntroIcon = ({ icon, alt }) => {
   return (
     <>
-      <img src={icon} alt={alt} className="w-1/12 mr-3 md:w-12 " />
+      <Tooltip title={alt} arrow>
+        <img src={icon} alt={alt} className="w-1/12 mr-3 md:w-12 " />
+      </Tooltip>
     </>
   );
 };
