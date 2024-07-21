@@ -11,7 +11,7 @@ const Skills = ({ imageUrl, title, skills }) => {
           <h4 className="text-3xl font-bold font-sans mb-4">{title}</h4>
           <div className="flex-grow">
             {skills.map((text) => (
-              <p className="text-lg mb-2">- {text}</p>
+              <h6 className="text-lg mb-2">- {text}</h6>
             ))}
           </div>
         </div>
