@@ -31,7 +31,7 @@ const Intro = () => {
           </div>
           <div className="flex flex-row items-center h-fit">
             <IntroIcon icon={reactjs} alt="react.js" />
-            <IntroIcon icon={js} alt="js" />
+            <IntroIcon icon={js} alt="java script" />
             <IntroIcon icon={mongodb} alt="mongodb" />
             <IntroIcon icon={expressjs} alt="expressjs" />
             <IntroIcon icon={nextjs} alt="nextjs" />
