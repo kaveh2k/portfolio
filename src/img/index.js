@@ -29,8 +29,10 @@ import newsletter from "./newsletter.png";
 import dotaz_front from "./dotaz_front.png";
 import manager from "./manager.png";
 import mc from "./mc.png";
+import digirain from "./digirain.png";
 
 export {
+  digirain,
   mc,
   seek,
   linkedin,

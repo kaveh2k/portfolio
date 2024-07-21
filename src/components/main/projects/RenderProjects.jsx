@@ -1,6 +1,12 @@
 import React from "react";
 import Project from "../../utils/Project";
-import { FaReact, FaCss3Alt, FaJava } from "react-icons/fa";
+import {
+  FaReact,
+  FaCss3Alt,
+  FaJava,
+  FaWordpress,
+  FaRocket,
+} from "react-icons/fa";
 import {
   SiRedux,
   SiTailwindcss,
@@ -19,11 +25,19 @@ import {
   SiGithub,
   SiElectron,
   SiApachemaven,
+  SiElementor,
 } from "react-icons/si";
 
 import { RiNextjsFill, RiNodejsLine } from "react-icons/ri";
 
-import { multistep, newsletter, dotaz_front, manager, mc } from "../../../img";
+import {
+  multistep,
+  newsletter,
+  dotaz_front,
+  manager,
+  mc,
+  digirain,
+} from "../../../img";
 
 const RenderProjects = () => {
   const projects = [
@@ -81,6 +95,18 @@ const RenderProjects = () => {
       githubLink: "https://github.com/kaveh2k/teleportgate",
     },
     {
+      imageUrl: digirain,
+      title: "Digi Rain PTY LTD",
+      description:
+        "Developed and maintained the company website showcasing their advanced video surveillance systems for residential and commercial clients across New South Wales.",
+      technologies: [
+        { Icon: FaWordpress, name: "Wordpress" },
+        { Icon: SiElementor, name: "Elementor" },
+        { Icon: FaRocket, name: "Rocket" },
+      ],
+      githubLink: "https://github.com/kaveh2k/teleportgate",
+    },
+    {
       imageUrl: multistep,
       title: "Multi Step Subscription",
       description:
@@ -89,7 +115,6 @@ const RenderProjects = () => {
         { Icon: FaReact, name: "React.js" },
         { Icon: SiRedux, name: "Redux (RTK)" },
         { Icon: FaCss3Alt, name: "CSS" },
-        { Icon: SiTailwindcss, name: "TailWind CSS" },
         { Icon: SiMui, name: "Material-UI (MUI)" },
         { Icon: SiReactrouter, name: "React Router" },
         { Icon: SiJavascript, name: "JavaScript" },
@@ -106,7 +131,6 @@ const RenderProjects = () => {
         { Icon: FaReact, name: "React.js" },
         { Icon: FaCss3Alt, name: "CSS" },
         { Icon: SiJavascript, name: "JavaScript" },
-        { Icon: SiTailwindcss, name: "TailWind CSS" },
       ],
       projectLink: "/newsletter",
       githubLink:
