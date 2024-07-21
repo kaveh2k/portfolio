@@ -12,7 +12,7 @@ const Project = ({
   backendLink,
 }) => {
   return (
-    <section className="bg-white p-6 rounded-lg shadow-md mb-8 w-full max-w-7xl">
+    <section className="bg-white p-6 rounded-lg shadow-md mb-8 w-full max-w-5xl">
       <div className="flex flex-col md:flex-row md:items-center ">
         <Link
           to={projectLink}
