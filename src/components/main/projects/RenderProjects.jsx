@@ -108,7 +108,7 @@ const RenderProjects = () => {
         { Icon: FaWpforms, name: "Wpforms" },
         { Icon: FaShieldAlt, name: "WpDefence" },
       ],
-      githubLink: "https://github.com/kaveh2k/teleportgate",
+      projectLink: "https://digirain.com.au/",
     },
     {
       imageUrl: multistep,
