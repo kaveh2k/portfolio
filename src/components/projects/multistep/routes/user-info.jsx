@@ -14,7 +14,7 @@ import FooterButtons from "../components/FooterButtons";
 import { Box } from "@mui/material";
 
 const UserInfo = () => {
-  const { hideBack, hideNext, isConfirm, next, previous } = useSelector(
+  const { hideBack, hideNext, isConfirm, next } = useSelector(
     (store) => store.footer
   );
   const { user } = useSelector((store) => store.subscription);

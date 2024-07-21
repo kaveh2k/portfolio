@@ -54,7 +54,7 @@ const Summary = () => {
       })
     );
     calcTotalPrice();
-  }, [dispatch, calcTotalPrice]);
+  });
 
   return (
     <Box
