@@ -8,10 +8,10 @@ const Skills = ({ imageUrl, title, skills }) => {
           className="hidden above-mid-screen:flex lg-mid-screen:hidden w-[200px] h-[160px] mx-auto object-contain"
         />
         <div>
-          <h4 className="text-[26px] md:text-3xl font-bold mb-4">{title}</h4>
+          <h3 className="text-[26px] md:text-3xl font-bold mb-4">{title}</h3>
           <div className="flex-grow">
             {skills.map((text) => (
-              <h6 className="text-base md:text-lg mb-2">- {text}</h6>
+              <p className="text-base md:text-lg mb-2">- {text}</p>
             ))}
           </div>
         </div>

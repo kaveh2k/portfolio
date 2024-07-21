@@ -16,9 +16,9 @@ const Header = () => {
     <>
       <header className="bg-gradient-to-r from-blue-500 to-indigo-600 shadow-lg py-6 px-4 md:px-8 flex flex-col md:flex-row items-center justify-between">
         <div className="flex items-center space-x-4">
-          <h1 className="text-4xl md:text-5xl font-extrabold text-white ">
+          <p className="text-4xl md:text-5xl font-extrabold text-white ">
             Kaveh's Portfolio
-          </h1>
+          </p>
         </div>
         <div className="flex space-x-6 mt-4 md:mt-0">
           <Tooltip title="LinkedIn" arrow>

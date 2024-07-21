@@ -20,9 +20,9 @@ const Intro = () => {
       <div className="mb-8 border-2 md:w-full md:max-w-5xl text-justify bg-white p-6 flex flex-col md:flex-row">
         <div className="">
           <div className="mb-3">
-            <h2 className="text-[26px] md:text-3xl  font-semibold mb-4">
+            <h1 className="text-[26px] md:text-3xl  font-semibold mb-4">
               Welcome to My portfolio Webpage
-            </h2>
+            </h1>
             <p className="text-base">
               turn ideas into pixels and data into experiences. I'm a full-stack
               developer passionate about crafting beautiful and functional web

@@ -22,9 +22,9 @@ const Project = ({
           <img src={imageUrl} alt={title} className="rounded-lg shadow-md" />
         </Link>
         <div className="text-justify md:w-3/5 ">
-          <h3 className="text-[26px] md:text-xl font-semibold mb-2 ">
+          <h2 className="text-[26px] md:text-xl font-semibold mb-2 ">
             {title}
-          </h3>
+          </h2>
           <p className="text-gray-700 mb-2 text-base">{description}</p>
           <div className="flex mb-2">
             {technologies.map((TechIcon, index) => (
