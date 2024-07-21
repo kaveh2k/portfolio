@@ -1,6 +1,6 @@
 import React from "react";
 import Project from "../../utils/Project";
-import { FaReact, FaCss3Alt } from "react-icons/fa";
+import { FaReact, FaCss3Alt, FaJava } from "react-icons/fa";
 import {
   SiRedux,
   SiTailwindcss,
@@ -18,11 +18,12 @@ import {
   SiMongodb,
   SiGithub,
   SiElectron,
+  SiApachemaven,
 } from "react-icons/si";
 
 import { RiNextjsFill, RiNodejsLine } from "react-icons/ri";
 
-import { multistep, newsletter, dotaz_front, sample } from "../../../img";
+import { multistep, newsletter, dotaz_front, manager, mc } from "../../../img";
 
 const RenderProjects = () => {
   const projects = [
@@ -54,7 +55,7 @@ const RenderProjects = () => {
       backendLink: "https://github.com/kaveh2k/dotaz-backend",
     },
     {
-      imageUrl: sample,
+      imageUrl: manager,
       title: "Store Management Software",
       description:
         "NextLevelManager is an offline application built with Next.js, Electron.js and Zustand.js to manage your shop and inventory. The application allows you to add or delete items from your inventory and automatically creates invoices for your in-store or online customers.(Development stage)",
@@ -67,6 +68,17 @@ const RenderProjects = () => {
         { icon: SiElectron, name: " Electron.js " },
       ],
       githubLink: "https://github.com/kaveh2k/nextlevelmanager",
+    },
+    {
+      imageUrl: mc,
+      title: "Teleport Gate",
+      description:
+        "A Minecraft plugin for the Paper server (version 1.20.6) that allows players to create and manage teleportation gates with various modes and destinations.",
+      technologies: [
+        { icon: FaJava, name: "Java" },
+        { icon: SiApachemaven, name: "Maven " },
+      ],
+      githubLink: "https://github.com/kaveh2k/teleportgate",
     },
     {
       imageUrl: multistep,

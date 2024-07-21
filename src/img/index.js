@@ -27,9 +27,11 @@ import tailwind from "./tailwind.svg";
 import multistep from "./multistep.png";
 import newsletter from "./newsletter.png";
 import dotaz_front from "./dotaz_front.png";
-import sample from "./sample.png";
+import manager from "./manager.png";
+import mc from "./mc.png";
 
 export {
+  mc,
   seek,
   linkedin,
   github,
@@ -52,7 +54,7 @@ export {
   newsletter,
   dotaz_front,
   fuse,
-  sample,
+  manager,
   web_developer,
   reactjs,
 };
