@@ -116,6 +116,7 @@ const SummaryTable = ({
                 </Typography>
               </Box>
             );
+          return <></>;
         })}
       </Box>
       <Box
