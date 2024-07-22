@@ -21,15 +21,17 @@ const Project = ({
         >
           <img src={imageUrl} alt={title} className="rounded-lg shadow-md" />
         </Link>
-        <div className="text-justify md:w-3/5 ">
+        <div className="md:w-3/5 text-left">
           <h2 className="text-[26px] md:text-xl font-semibold mb-2 ">
             {title}
           </h2>
-          <p className="text-gray-700 mb-2 text-base">{description}</p>
-          <div className="flex mb-2">
+          <p className="text-gray-700 mb-2 text-base text-justify">
+            {description}
+          </p>
+          <div className="ruby-text">
             {technologies.map((TechIcon, index) => (
               <Tooltip key={index} arrow title={TechIcon.name}>
-                <div className="mx-1" key={index}>
+                <div className="pr-2" key={index}>
                   <TechIcon.Icon className="text-blue-500" />
                 </div>
               </Tooltip>

@@ -30,7 +30,7 @@ const Intro = () => {
               to life!
             </p>
           </div>
-          <div className="flex flex-row items-center h-fit ">
+          <div className="flex flex-row items-center h-fit ruby">
             <IntroIcon icon={reactjs} alt="react.js" />
             <IntroIcon icon={js} alt="java script" />
             <IntroIcon icon={mongodb} alt="mongodb" />
