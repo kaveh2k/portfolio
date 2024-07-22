@@ -10,6 +10,7 @@ const Project = ({
   projectLink,
   githubLink,
   backendLink,
+  links,
 }) => {
   return (
     <section className="bg-white p-6 rounded-lg shadow-md mb-8 w-full max-w-5xl">
@@ -37,49 +38,18 @@ const Project = ({
               </Tooltip>
             ))}
           </div>
-          {projectLink ? (
+          {links.map((link) => (
             <div class="mt-3 mr-5 relative inline-flex  group">
               <div class="absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-gray-300 via-slate-300 to-gray-300 rounded-xl blur-sm group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
               <Link
-                to={projectLink}
+                to={link.target}
                 className="relative inline-flex items-center justify-center px-3 py-2 text-base font-bold text-white transition-all duration-200 bg-blue-500 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 hover:text-white"
                 target="_blank"
               >
-                View Project
+                {link.name}
               </Link>
             </div>
-          ) : (
-            <></>
-          )}
-
-          {githubLink ? (
-            <div class="mt-5 mr-5 relative inline-flex  group">
-              <div class="absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-gray-300 via-slate-300 to-gray-300 rounded-xl blur-sm group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
-              <Link
-                to={githubLink}
-                className="relative inline-flex items-center justify-center px-3 py-2 text-base font-bold text-white transition-all duration-200 bg-blue-500 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 hover:text-white"
-                target="_blank"
-              >
-                View Github
-              </Link>
-            </div>
-          ) : (
-            <></>
-          )}
-          {backendLink ? (
-            <div class="mt-3 relative inline-flex  group">
-              <div class="absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-gray-300 via-slate-300 to-gray-300 rounded-xl blur-sm group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
-              <Link
-                to={backendLink}
-                className="relative inline-flex items-center justify-center px-3 py-2 text-base font-bold text-white transition-all duration-200 bg-blue-500 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 hover:text-white"
-                target="_blank"
-              >
-                View Backend Github
-              </Link>
-            </div>
-          ) : (
-            <></>
-          )}
+          ))}
         </div>
       </div>
     </section>

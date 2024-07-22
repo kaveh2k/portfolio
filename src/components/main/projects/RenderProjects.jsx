@@ -66,9 +66,20 @@ const RenderProjects = () => {
         { Icon: SiMongodb, name: "MongoDB" },
         { Icon: SiGithub, name: "GitHub" },
       ],
-      projectLink: "https://dotaz.netlify.app/",
-      githubLink: "https://github.com/kaveh2k/dotaz/",
-      backendLink: "https://github.com/kaveh2k/dotaz-backend",
+      links: [
+        {
+          name: "View Project",
+          target: "https://dotaz.netlify.app/",
+        },
+        {
+          name: "View Github",
+          target: "https://github.com/kaveh2k/dotaz/",
+        },
+        {
+          name: "View Backend Github",
+          target: "https://github.com/kaveh2k/dotaz-backend",
+        },
+      ],
     },
     {
       imageUrl: manager,
@@ -83,7 +94,12 @@ const RenderProjects = () => {
         { Icon: RiNextjsFill, name: " Next.js" },
         { Icon: SiElectron, name: " Electron.js " },
       ],
-      githubLink: "https://github.com/kaveh2k/nextlevelmanager",
+      links: [
+        {
+          name: "View Github",
+          target: "https://github.com/kaveh2k/nextlevelmanager",
+        },
+      ],
     },
     {
       imageUrl: mc,
@@ -94,7 +110,12 @@ const RenderProjects = () => {
         { Icon: FaJava, name: "Java" },
         { Icon: SiApachemaven, name: "Maven " },
       ],
-      githubLink: "https://github.com/kaveh2k/teleportgate",
+      links: [
+        {
+          name: "View Github",
+          target: "https://github.com/kaveh2k/TeleportGate",
+        },
+      ],
     },
     {
       imageUrl: digirain,
@@ -108,7 +129,12 @@ const RenderProjects = () => {
         { Icon: FaWpforms, name: "Wpforms" },
         { Icon: FaShieldAlt, name: "WpDefence" },
       ],
-      projectLink: "https://digirain.com.au/",
+      links: [
+        {
+          name: "View Project",
+          target: "https://digirain.com.au/",
+        },
+      ],
     },
     {
       imageUrl: multistep,
@@ -123,9 +149,17 @@ const RenderProjects = () => {
         { Icon: SiReactrouter, name: "React Router" },
         { Icon: SiJavascript, name: "JavaScript" },
       ],
-      projectLink: "/multistep",
-      githubLink:
-        "https://github.com/kaveh2k/portfolio/tree/master/src/components/projects/multistep",
+      links: [
+        {
+          name: "View Project",
+          target: "/multistep",
+        },
+        {
+          name: "View Github",
+          target:
+            "https://github.com/kaveh2k/portfolio/tree/master/src/components/projects/multistep",
+        },
+      ],
     },
     {
       imageUrl: newsletter,
@@ -136,9 +170,17 @@ const RenderProjects = () => {
         { Icon: FaCss3Alt, name: "CSS" },
         { Icon: SiJavascript, name: "JavaScript" },
       ],
-      projectLink: "/newsletter",
-      githubLink:
-        "https://github.com/kaveh2k/portfolio/tree/master/src/components/projects/newsletter",
+      links: [
+        {
+          name: "View Project",
+          target: "/newsletter",
+        },
+        {
+          name: "View Github",
+          target:
+            "https://github.com/kaveh2k/portfolio/tree/master/src/components/projects/newsletter",
+        },
+      ],
     },
   ];
 
@@ -151,6 +193,7 @@ const RenderProjects = () => {
           title={project.title}
           description={project.description}
           technologies={project.technologies}
+          links={project.links}
           projectLink={project.projectLink}
           githubLink={project.githubLink}
           backendLink={project.backendLink}
