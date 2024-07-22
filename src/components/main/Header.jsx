@@ -5,6 +5,7 @@ import { keyframes } from "@emotion/react";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import PdfIcon from "@mui/icons-material/PictureAsPdf";
+import RenderHeader from "./header/RenderHeader";
 
 const Header = () => {
   const iconHoverAnimation = keyframes`
@@ -21,39 +22,17 @@ const Header = () => {
           </p>
         </div>
         <div className="flex space-x-6 mt-4 md:mt-0">
-          <Tooltip title="LinkedIn" arrow>
-            <Link
-              to="https://www.linkedin.com/in/kaveh-korki/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-white hover:text-blue-300 transition-colors duration-300"
-              style={{ animation: `${iconHoverAnimation} 1s infinite` }}
-            >
-              <LinkedInIcon fontSize="large" />
-            </Link>
-          </Tooltip>
-          <Tooltip title="GitHub" arrow>
-            <Link
-              to="https://github.com/kaveh2k"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-white hover:text-gray-300 transition-colors duration-300"
-              style={{ animation: `${iconHoverAnimation} 1s infinite` }}
-            >
-              <GitHubIcon fontSize="large" />
-            </Link>
-          </Tooltip>
-          <Tooltip title="Resume" arrow>
-            <Link
-              to=""
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-white hover:text-red-300 transition-colors duration-300"
-              style={{ animation: `${iconHoverAnimation} 1s infinite` }}
-            >
-              <PdfIcon fontSize="large" />
-            </Link>
-          </Tooltip>
+          <RenderHeader
+            des="LinkedIn"
+            link="https://www.linkedin.com/in/kaveh-korki/"
+            Icon={LinkedInIcon}
+          />
+          <RenderHeader
+            des="GitHub"
+            link="https://github.com/kaveh2k"
+            Icon={GitHubIcon}
+          />
+          <RenderHeader des="Resume" link="" Icon={PdfIcon} />
         </div>
       </header>
     </>
