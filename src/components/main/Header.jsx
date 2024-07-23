@@ -32,7 +32,7 @@ const Header = () => {
             link="https://github.com/kaveh2k"
             Icon={GitHubIcon}
           />
-          <RenderHeader des="Resume" link="" Icon={PdfIcon} />
+          {/* <RenderHeader des="Resume" link="" Icon={PdfIcon} /> */}
         </div>
       </header>
     </>
