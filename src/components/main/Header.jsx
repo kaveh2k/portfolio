@@ -1,18 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { Tooltip } from "@mui/material";
-import { keyframes } from "@emotion/react";
+// import { Link } from "react-router-dom";
+// import { Tooltip } from "@mui/material";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import PdfIcon from "@mui/icons-material/PictureAsPdf";
+// import PdfIcon from "@mui/icons-material/PictureAsPdf";
 import RenderHeader from "./header/RenderHeader";
 
 const Header = () => {
-  const iconHoverAnimation = keyframes`
-  0% { transform: scale(1); }
-  50% { transform: scale(1.1); }
-  100% { transform: scale(1); }
-`;
   return (
     <>
       <header className="bg-gradient-to-r from-blue-500 to-indigo-600 shadow-lg py-6 px-4 md:px-8 flex flex-col md:flex-row items-center justify-between">
